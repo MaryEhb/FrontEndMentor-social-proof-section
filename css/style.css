@@ -1,0 +1,291 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+  font-family: 'Spartan', sans-serif;
+  color: #502050;
+}
+
+p {
+  line-height: 1.3rem;
+  font-weight: 500;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  width: 100%;
+  max-width: 900px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.intro-txt {
+  width: 47%;
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+  .intro-txt {
+    width: auto;
+  }
+}
+
+.intro-txt h1 {
+  max-width: 360px;
+  padding-bottom: .5rem;
+  font-size: 38px;
+}
+
+.intro-txt p {
+  color: #937b92;
+  max-width: 360px;
+}
+
+.ratings-wrap {
+  width: 52%;
+  display: inline-block;
+  position: relative;
+  padding-top: .75rem;
+}
+
+@media (max-width: 700px) {
+  .ratings-wrap {
+    width: 100%;
+    padding-top: 3rem;
+  }
+}
+
+.ratings-wrap .rating {
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+  background: #f7f2f7;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 370px;
+  font-weight: 700;
+  position: relative;
+}
+
+@media (max-width: 700px) {
+  .ratings-wrap .rating {
+    display: block;
+    text-align: center;
+    max-width: none;
+    width: 100%;
+  }
+}
+
+.ratings-wrap .rating:nth-of-type(2) {
+  left: 10%;
+}
+
+@media (max-width: 700px) {
+  .ratings-wrap .rating:nth-of-type(2) {
+    left: 0;
+  }
+}
+
+.ratings-wrap .rating:nth-of-type(3) {
+  left: 20%;
+}
+
+@media (max-width: 700px) {
+  .ratings-wrap .rating:nth-of-type(3) {
+    left: 0;
+  }
+}
+
+.ratings-wrap .stars {
+  padding-right: 1rem;
+}
+
+.ratings-wrap .stars .star {
+  max-width: 14px;
+  margin-right: .1rem;
+}
+
+@media (max-width: 700px) {
+  .ratings-wrap .stars {
+    margin-bottom: .5rem;
+  }
+}
+
+.reviews-wrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: Space-between;
+      -ms-flex-pack: Space-between;
+          justify-content: Space-between;
+  padding-top: 3rem;
+  position: relative;
+}
+
+@media (max-width: 700px) {
+  .reviews-wrap {
+    display: block;
+  }
+}
+
+.reviews-wrap .reviewer {
+  width: 30%;
+  background: #502050;
+  color: #f7f2f7;
+  border-radius: 8px;
+  padding: 1.6rem;
+  position: relative;
+}
+
+@media (max-width: 700px) {
+  .reviews-wrap .reviewer {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.reviews-wrap .reviewer:nth-of-type(2) {
+  top: 10%;
+}
+
+.reviews-wrap .reviewer:last-of-type {
+  top: 20%;
+}
+
+.reviews-wrap .reviewer .review {
+  padding-top: 1.5rem;
+  line-height: 1rem;
+}
+
+.reviews-wrap .reviewer p {
+  font-size: 10px;
+}
+
+.reviews-wrap .reviewer .reviewer-img {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.reviews-wrap .reviewer .info {
+  display: inline-block;
+  font-size: 8px;
+  padding-left: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reviews-wrap .reviewer .info p {
+  color: #ee68a4;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (max-width: 700px) {
+  .top {
+    display: block;
+    text-align: center;
+  }
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-img-top {
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 700px) {
+  .bg-img-top {
+    display: none;
+  }
+}
+
+.bg-img-top-mob {
+  top: 0;
+  left: 0;
+}
+
+@media (min-width: 700px) {
+  .bg-img-top-mob {
+    display: none;
+  }
+}
+
+.bg-img-bottom {
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 700px) {
+  .bg-img-bottom {
+    display: none;
+  }
+}
+
+.bg-img-bottom-mob {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .bg-img-bottom-mob {
+    display: none;
+  }
+}
+
+.attribution {
+  font-weight: 700;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.attribution a {
+  color: #ee68a4;
+}
+/*# sourceMappingURL=style.css.map */
