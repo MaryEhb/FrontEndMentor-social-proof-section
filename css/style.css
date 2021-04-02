@@ -294,6 +294,7 @@ p {
   text-align: center;
   padding: 2rem;
   position: relative;
+  overflow-x: hidden;
 }
 
 .attribution a {
