@@ -19,6 +19,7 @@ body {
   font-size: 12px;
   font-family: 'Spartan', sans-serif;
   color: #502050;
+  overflow-x: hidden;
 }
 
 p {
