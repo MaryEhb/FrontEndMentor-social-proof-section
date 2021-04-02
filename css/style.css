@@ -5,6 +5,16 @@
   padding: 0;
 }
 
+::-moz-selection {
+  background: #ee68a4;
+  color: #f7f2f7;
+}
+
+::selection {
+  background: #ee68a4;
+  color: #f7f2f7;
+}
+
 body {
   font-size: 12px;
   font-family: 'Spartan', sans-serif;
